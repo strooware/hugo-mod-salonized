@@ -1,0 +1,13 @@
+{{- $scope := . -}}
+{{- with .Site.Params.mods.salonized -}}
+	<script src="https://static-widget.salonized.com/loader.js"></script>
+	<script
+		src="https://cdn.salonized.com/widget.js"
+		data-name="salonized"
+		data-microsite-url="https://{{- .company_url -}}.salonized.com"
+	></script>
+
+	{{- if not ($scope.HasShortcode "salonized/bookings") -}}
+		{{- partial "salonized/bookings" (slice $scope) -}}
+	{{- end -}}
+{{- end -}}

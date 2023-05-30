@@ -1,0 +1,15 @@
+{
+	"tabWidth": 3,
+	"useTabs": true,
+	"trailingComma": "all",
+	"semi": false,
+	"singleQuote": true,
+	"overrides": [
+		{
+			"files": ["*.html"],
+			"options": {
+				"parser": "go-template"
+			}
+		}
+	]
+}

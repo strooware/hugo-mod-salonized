@@ -1,0 +1,5 @@
+[salonized.bookings.no_script]
+other = "Je hebt javascript nodig om een boeking te plaatsen"
+
+[salonized.reviews.no_script]
+other = "Je hebt javascript nodig om de reviews te zien"

@@ -1,0 +1,5 @@
+[salonized.bookings.no_script]
+other = "You need to enable javascript in order to make a booking"
+
+[salonized.reviews.no_script]
+other = "You need to enable javascript in order to view the reviews"
