@@ -1,13 +1,16 @@
 {{- $scope := . -}}
 {{- with .Site.Params.mods.salonized -}}
 	<script src="https://static-widget.salonized.com/loader.js"></script>
-	<script
-		src="https://cdn.salonized.com/widget.js"
-		data-name="salonized"
-		data-microsite-url="https://{{- .company_url -}}.salonized.com"
-	></script>
 
 	{{- if not ($scope.HasShortcode "salonized/bookings") -}}
 		{{- partial "salonized/bookings" (slice $scope) -}}
+	{{- end -}}
+
+	{{- if ($scope.HasShortcode "salonized/reviews") -}}
+		<script
+			data-name="salonized"
+			src="https://cdn.salonized.com/widget.js"
+			data-microsite-url="https://{{- .company_url -}}.salonized.com"
+		></script>
 	{{- end -}}
 {{- end -}}
