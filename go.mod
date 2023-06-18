@@ -1,3 +1,3 @@
-module git.strooweb.nl/strooware/hugo-mod-salonized
+module github.com/strooware/hugo-mod-salonized
 
 go 1.20
