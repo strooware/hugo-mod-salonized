@@ -13,7 +13,7 @@ There are shortcodes for the following widgets:
 
 Run this to install mod
 ```bash
-$ hugo mod get -u git.strooware.nl/strooware/hugo-mod-salonized
+$ hugo mod get -u git.strooweb.nl/strooware/hugo-mod-salonized
 ```
 
 Add this to your html
